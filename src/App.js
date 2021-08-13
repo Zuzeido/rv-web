@@ -11,38 +11,39 @@ import Contacto from "./componentes/contacto";
 import Footer from "./componentes/footer";
 import Barras from "./componentes/barras";
 import PortComing from "./componentes/port_coming";
- 
+
 function App() {
   return (
     <>
-    <Particles
-    className="particles-canvas"
-      params={{
-        particles: {
-          number: {
-            value: 90,
-            density: {
-              enable: true,
-              value_area: 900
-            }
-          },
-          shape: {
-            type: "circle",
-            stroke: {
-              width: 6,
-              color: "#f9ab00"
+      <Particles
+        className="particles-canvas"
+        params={{
+          particles: {
+            number: {
+              value: 90,
+              density: {
+                enable: true,
+                value_area: 900
+              }
+            },
+            shape: {
+              type: "circle",
+              stroke: {
+                width: 6,
+                color: "#f9ab00"
+              }
             }
           }
-        }
-      }}
-    />
-    <Navbar />
-    <Header />
-    <SobreNosotros />
-    <Services />
-    
-    <Contacto />
-    <Footer />
+        }}
+      />
+      <Navbar />
+      <Header />
+      <SobreNosotros />
+      <Portfolio />
+      <Services />
+
+      <Contacto />
+      <Footer />
     </>
   );
 }
